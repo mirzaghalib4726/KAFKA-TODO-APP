@@ -89,7 +89,7 @@ Before running the project, ensure you have the following installed:
 - [Node.js](https://nodejs.org/) (v16 or higher)
 - [NestJS CLI](https://docs.nestjs.com/cli/overview) (`npm i -g @nestjs/cli`)
 - [MongoDB](https://www.mongodb.com/try/download/community) (running locally or remotely)
-- [Docker](https://www.docker.com/) (optional, for running Kafka and MongoDB in containers)
+- [Docker](https://www.docker.com/) (for running Kafka)
 
 ---
 
@@ -98,7 +98,7 @@ Before running the project, ensure you have the following installed:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/kafka-todo-app.git
+   git clone https://github.com/mirzaghalib4726/kafka-todo-app.git
    cd kafka-todo-app
    ```
 
@@ -113,11 +113,18 @@ Before running the project, ensure you have the following installed:
    Create a `.env` file in the root directory and add the following variables:
 
    ```env
-   KAFKA_BROKER=localhost:9092
-   KAFKA_CLIENT_ID_PRODUCER=nestjs-producer
-   KAFKA_TOPIC=task-events
-   MONGO_URI=mongodb://localhost:27017/kafka-todo-app
-   JWT_SECRET=your-jwt-secret
+   PORT=
+   MONGO_SERVER_LOCAL=
+   MONGO_DATABASE_NAME=
+
+   JWTSECRET=
+   SALT=
+
+   KAFKA_CLIENT_ID_PRODUCER=
+   KAFKA_CLIENT_ID_CONSUMER=
+   KAFKA_BROKER=
+   KAFKA_TOPIC=
+
    ```
 
 4. **Run Kafka and MongoDB**
